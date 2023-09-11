@@ -9,9 +9,11 @@ import lombok.*;
 @Table(name = "tb_proveedor")
 @Data
 @NoArgsConstructor
+@NamedQuery(name = "Proveedor.findAll", query = "Select p From Proveedor p")
 public class Proveedor {
 	
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int idproveedor;
 	private String nombre_rs;
 	private String telefono;

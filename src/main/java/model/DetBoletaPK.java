@@ -2,7 +2,7 @@ package model;
 
 import java.io.Serializable;
 
-import jakarta.persistence.Embeddable;
+import jakarta.persistence.*;
 import lombok.*;
 
 @Embeddable
@@ -12,6 +12,8 @@ public class DetBoletaPK implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
 	
+	@Column(insertable = false, updatable = false)
 	private int num_bol;
+	@Column(insertable = false, updatable = false)
 	private String id_prod;
 }

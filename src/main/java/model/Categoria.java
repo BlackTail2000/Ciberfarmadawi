@@ -9,9 +9,11 @@ import lombok.*;
 @Table(name = "tb_categorias")
 @Data
 @NoArgsConstructor
+@NamedQuery(name = "Categoria.findAll", query = "Select c From Categoria c")
 public class Categoria {
 	
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int idcategoria;
 	private String descripcion;
 	

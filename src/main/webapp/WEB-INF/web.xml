@@ -4,4 +4,34 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>TipoServlet</servlet-name>
+  	<display-name>TipoServlet</display-name>
+  	<description></description>
+  	<servlet-class>servlets.TipoServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>CategoriaServlet</servlet-name>
+  	<display-name>CategoriaServlet</display-name>
+  	<description></description>
+  	<servlet-class>servlets.CategoriaServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ProveedorServlet</servlet-name>
+  	<display-name>ProveedorServlet</display-name>
+  	<description></description>
+  	<servlet-class>servlets.ProveedorServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>TipoServlet</servlet-name>
+  	<url-pattern>/TipoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>CategoriaServlet</servlet-name>
+  	<url-pattern>/CategoriaServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ProveedorServlet</servlet-name>
+  	<url-pattern>/ProveedorServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
